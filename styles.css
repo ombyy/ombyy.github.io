@@ -1,0 +1,217 @@
+/* general settings */
+ body {
+    background-color:#0d0336;
+ }
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+
+.snake-game-text {
+    height: 500px;
+    width: 480px;
+    color:aliceblue;
+    text-shadow: #a3268a 2px 2px;
+    font-family: 'fibberish', sans-serif; /* Use the custom font */
+    position: absolute; /* Position the text absolutely within the container */
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 2em; /* Adjust the font size as needed */
+    background-image: url('img/snakegame_example.gif');
+    border-radius: 50px;
+}
+
+.snake-game-text:hover {
+    filter: blur(3px);
+}
+
+.weatherapp:hover {
+    filter: blur(3px);
+}
+
+.lan {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px; /* Add space between items */
+}
+
+.snake {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    font-size: 75px;
+    color:aliceblue;
+    text-shadow: #a3268a 2px 2px;
+    font-family: 'fibberish', sans-serif; /* Use the custom font */
+    position: absolute; /* Position the text absolutely within the container */
+    top: 48%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+
+}
+
+.weatherapp-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    font-size: 75px;
+    color:aliceblue;
+    text-shadow: #a3268a 2px 2px;
+    font-family: 'fibberish', sans-serif; /* Use the custom font */
+    position: absolute; /* Position the text absolutely within the container */
+    top: 120%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position to be truly centered */
+    border-radius: 50px;
+
+}
+
+.weatherapp {
+    height: 500px;
+    width: 480px;
+    font-family: 'fibberish', sans-serif; /* Use the custom font */
+    position: absolute; /* Position the text absolutely within the container */
+    top: 120%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position to be truly centered */
+    color: white; /* Text color */
+    font-size: 2em; /* Adjust the font size as needed */
+    background-image: url('img/img_website/6ad2ee191d434a996766b500a1eb197e.gif');
+    border-radius: 50px;
+    background-image: cover;
+    background-image: no-repeat;
+    background-size: cover;
+}
+
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .dud {
+    color:#a3268a;
+    }
+
+/* portfolio settings */
+ 
+.intro {
+    font-family: 'Fibberish', sans-serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    z-index: 0;
+    color:aliceblue;
+    text-shadow: #a3268a 2px 2px;
+}
+
+
+/* fonts */
+@font-face {
+    font-family: 'Fibberish';
+    src: url('fonts/fibberish.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* navbar settings */
+
+.navbar {
+    background-color: #1c042993;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fibberish', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+  
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.navbar li {
+    float: center;
+}
+
+.navbar li a {
+    display: block;
+    color: aliceblue;
+    text-shadow:#a3268a 2px 2px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+    border-radius: 20px;
+}
+
+nav li a.active {
+    background-color: #0200054b;
+    color: aliceblue;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    #bg-video {
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+

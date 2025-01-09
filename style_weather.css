@@ -1,0 +1,153 @@
+/* fonts */
+@font-face {
+    font-family: 'Fibberish';
+    src: url('fonts/fibberish.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body.morning {
+    background: url('imgs/EDGE\ KD.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.afternoon {
+    background: url('imgs/The\ Moody\,\ Mysterious\ World\ Of\ Pixel\ Artist\,\ Illustrator\ And\ Videographer\ APO\ –\ Design\ You\ Trust\ —\ Design\ Daily\ Since\ 2007.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.evening {
+    background: url('imgs/2Dアートを学びたい人にこそ、ドット絵を勧めたい。ULTIMATE\ PIXEL\ CREWが実践するピクセルアートライフ.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.night {
+    background: url('imgs/Pixel\ Art\ Background.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Fibberish', sans-serif;
+    background-color: #282c34; /* Background color similar to your portfolio */
+    color: #FAFAFA; /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a text shadow for better readability */
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #FAFAFA;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #FAFAFA;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #a3268a; /* Button background color */
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b1e74; /* Darker shade for hover effect */
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: #1c042993;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fibberish', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+  
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.navbar li {
+    float: center;
+}
+
+.navbar li a {
+    display: block;
+    color: aliceblue;
+    text-shadow:#a3268a 2px 2px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+    border-radius: 20px;
+}
+
+nav li a.active {
+    background-color: #0200054b;
+    color: aliceblue;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}

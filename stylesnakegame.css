@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'fibberish';
+    src: url('fonts/fibberish.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+canvas {
+    border: 1px solid #000;
+}
+
+h1 {
+    margin: 5px;
+}
+
+#Title1 {
+    display: flex;
+    font-family: 'fibberish', Courier, monospace;
+    font-size: 100px;
+    color: rgb(240, 199, 18);
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 100px;
+    text-decoration-color: #882323;
+    text-decoration: wavy;
+}
+
+.explanation {
+    display: flex;
+    font-family: 'fibberish', Courier, monospace;
+    font-size: 20px;
+    color: rgb(35, 11, 80);
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 100px;
+    text-decoration-color: #882323;
+    text-decoration: wavy;
+}
+.enemy {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #05000000;
+    background-image: url('img/rein-pixelated-earthshatter-v0-e7o3von41w1c1.gif');
+    background-size: cover;
+    
+
+}
+
+
+.navbar {
+    background-color: #1c042993;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fibberish', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: aliceblue;
+    text-shadow:#a3268a 2px 2px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+    border-radius: 20px;
+}
+
+nav li a.active {
+    background-color: #0200054b;
+    color: aliceblue;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    #bg-video {
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.navbar li {
+    float: center;
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+
+
+.zen {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 300px;
+    background-image: url('img/tumblr_ohrvszbD2u1ufdtcro3_r1_640.webp');
+    background-size: cover;
+    display: block;
+    
+}
+
+#gameArea {
+    display: flex;
+    position: relative;
+    width: 420px;
+    height: 420px;
+    background-image: url('img/+100\ Pixel\ Art\ Masterpieces.gif');
+    background-size: cover;
+    border: 5px solid #2bdfe644;
+    background-color: rgba(74, 64, 168, 0.582);
+}
+
+.snake-head {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(63, 143, 143, 0);
+    border: 1px solid rgba(0, 100, 0, 0);
+}
+
+#score {
+    margin-right: 14px;
+    background-color: #8d86eead;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+#timer {
+    border-color: aquamarine;
+    background-color: #8d86eead;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+#zenText {
+    position: absolute;
+    color: rgb(224, 192, 11);
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+    font-family: 'fibberish', Courier, monospace;
+}
+
+#zenText1 {
+    position: absolute;
+    color: rgb(224, 192, 11);
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+    font-family: 'fibberish', Courier, monospace;
+}
+
+#controls2 {
+    background-color: #8d86eead;
+    padding: 4px;
+    border-radius: 10px;
+    border-color: rgb(236, 216, 28);
+    color: rgb(216, 202, 8);
+    font-family: 'fibberish', Courier, monospace;
+    font-size: x-large;
+    margin: 0;
+    background-image: url('img/+100\ Pixel\ Art\ Masterpieces.gif');
+}
+
+#controls {
+    display: flex;
+    gap: 10px; 
+    margin-top: 0px;
+    margin-left: 25px;
+    padding: 4px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border-color: rgb(221, 218, 17);
+    color: rgb(235, 178, 21);
+    font-family: 'fibberish', Courier, monospace;
+    font-size: x-large;
+}
+
+#startButton {
+    justify-content: space-around;
+    display: flex;
+    margin-left: 10px; 
+}
+
+#W {
+    display: flex;
+    margin-left: 60px;
+    margin-bottom: 1px;
+}
+
+#A {
+    display: table-row;
+    margin-left: 0px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.win {
+    font-family: 'fibberish', Courier, monospace;
+    font-size: 40px;
+    color: rgb(236, 233, 34);
+    text-shadow: 2px 2px 2px black;
+}
+
+.restartinfo {
+    font-family: 'fibberish', Courier, monospace;
+    font-size: 30px;
+    color: rgb(236, 233, 34);
+    text-shadow: 2px 2px 2px black;
+}
+
+button {
+    background-color: #8d86eead;
+    padding: 4px;
+    border-radius: 10px;
+    border-color: rgb(201, 108, 2);
+    color: rgb(216, 213, 18);
+    font-family: 'fibberish', Courier, monospace;
+    font-size: x-large;
+    background-image: url('img/+100\ Pixel\ Art\ Masterpieces.gif');
+}
+
+.snake-body.head {
+    background-color: green;
+    border-color: darkgreen;
+}
+
+#food {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('img/edf254eea0ca51397e883b6908ad57cb.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.snake-head.visible {
+    display: block;
+}
+
+#wrapper1 {
+    background-image: url('img/d8trjw0-017378be-b682-4506-acee-f737e13b442f.png');
+    background-size: contain;
+}
+
+#ui {
+    border-color: rgb(233, 174, 13);
+    border-radius: 10px;
+    font-family: 'fibberish';
+    font-size: 20px;
+    color:rgb(228, 206, 10);
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-clip: url('img/j18qwtm4fbva1.mp4');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.snake-part {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border: 1px solid darkgreen;
+}   
+
+.snake-segment {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-image: url('img/EnergyOrb.webp');
+    background-size: cover;
+    filter: hue-rotate(182deg);
+}
+
+.effect {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('img/d6bbrxe-b017a61b-b988-4e09-adbd-56f50ede0ab6.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+@keyframes moveDownFadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(30px); 
+        opacity: 0;
+    }
+}
+
+.animate-move-down-fade-out {
+    animation: moveDownFadeOut 1s forwards; 
+}
+
+#zenText, #zenText1 {
+    position: absolute;
+    color: rgb(224, 192, 11);
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+#controls-container {
+    display: flex;
+    align-items: center;
+    gap: 213px; 
+}
