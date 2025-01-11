@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    object-fit: fill;
     overflow: hidden;
     z-index: -1; /* Ensure the video is behind other content */
 }
@@ -45,7 +45,9 @@
 }
 
 
+
 .projects {
+    flex: 1;
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     justify-content: center;
@@ -105,15 +107,14 @@
 
 
 #bg-video {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100vh;
     transform: translate(-50%, -50%);
     background-size: cover;
+    object-fit: fill;
 }
 
 .container {
@@ -126,7 +127,7 @@
   }
   
   .dud {
-    color:#a3268a;
+    color:#29ceda;
     }
 
 /* portfolio settings */
@@ -140,7 +141,7 @@
     height: 50vh;
     z-index: 0;
     color:aliceblue;
-    text-shadow: #a3268a 2px 2px;
+    text-shadow: #a3268a 4px 4px;
 }
 
 
@@ -215,3 +216,36 @@ nav li a.active {
     }
 }
 
+footer {
+    background-color: rgba(82, 20, 163, 0.162); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    width: 100%; /* Make the footer take the full width of the page */
+    text-align: center;
+    position: relative; /* Position the footer relative to the content */
+    padding: 10px;
+    margin-top: 700px;
+    color: aliceblue ;
+    font-family: 'Fibberish', sans-serif;
+    text-shadow: #a3268a 2px 2px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 2em;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    font-family: 'Fibberish', sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: #a3268a 2px 2px;
+    margin-top: 150px;
+}
+
+#discord {
+    margin-top: 150px;
+    margin-left: -450px;
+}

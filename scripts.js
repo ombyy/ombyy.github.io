@@ -131,8 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const phrases = [
-        'Hey!, my name is George Sorrell', 'Welcome to my portfolio', 
-        'I am a full stack web developer', 'Below are languages and frameworks I have experience with', 
+        'Hey!, my name is George', 'Welcome to my portfolio!', 
+        'I am a Junior full stack web developer', 'Passionate about front and back-end', 
     ];
     scrambleText('.intro', phrases);
 });
