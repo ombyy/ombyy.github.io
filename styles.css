@@ -245,6 +245,35 @@ footer p {
     margin-top: 150px;
 }
 
+.about {
+    display: flex;
+    width: 60%;
+    margin-left: 350px;
+    justify-content: center;
+    font-family: 'Fibberish', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: #a3268a 2px 2px;
+    margin-top: 150px;
+    background-color: #a3189f62;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.about2 {
+    display: flex;
+    width: 60%;
+    margin-left: 350px;
+    justify-content: center;
+    font-family: 'Fibberish', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: #a3268a 2px 2px;
+    background-color: #a3189f62;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
 #discord {
     margin-top: 150px;
     margin-left: -450px;
